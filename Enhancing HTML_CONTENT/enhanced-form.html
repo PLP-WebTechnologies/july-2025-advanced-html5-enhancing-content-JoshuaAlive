@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <title>Advanced HTML5 Content & Forms</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>HTML5 Content & Form Demonstration</h1>
+            <p>This page showcases advanced HTML5 features including structure content and a well-validated form.</p>
+        </header>
+
+        <main>
+            <!-- Lists Section -->
+             <section>
+                <h2>Popular Programming Languages</h2>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>HTML & CSS</li>
+                </ul>
+
+                <h3>Steps to Build a Web Form</h3>
+                <ol>
+                    <li>Plan the form layout and fields.</li>
+                    <li>Use semantic tags like <code>&lt;form&gt;</code> and <code>&lt;fieldset&gt;</code>.</li>
+                    <li>Include labels for accessibility.</li>
+                    <li>Add validation attributes for user input.</li>
+                    <li>Test your form in different browsers.</li>
+                </ol>
+             </section>
+
+             <!-- Table Section -->
+              <section>
+                <h2>Sample Student Scores</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Course</th>
+                            <th>Score</th>
+
+                        </tr> 
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Alice</td>
+                            <td>HTML5</td>
+                            <td>95</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bob</td>
+                            <td>CSS</td>
+                            <td>88</td>
+                        </tr>
+
+                        <tr>
+                            <td>Charlie</td>
+                            <td>JavaScript</td>
+                            <td>93</td>
+                        </tr>
+                    </tbody>
+                </table>
+              </section>
+
+              <!-- Media Section -->
+               <section>
+                <h2>Embedded Media</h2>
+                <img src="https://newsletters.edutechng.com/uploads/1754036415.jpeg" alt="Edutech Banner" style="max-width:100%;height:auto;display:block;margin-bottom:1em;">
+            
+                <p>Listen to our course intro audio:</p>
+                <audio controls>
+                    <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg" />
+                   Your browser does not support the audio element.
+                </audio>
+
+                <p>Watch the welcome video:</p>
+                <video width="100%" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+              </section>
+
+              <!-- Form Section -->
+               <section>
+                <h2>Registration Form</h2>
+                <form action="#" method="post" autocomplete="on">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="firstname">firstname Name:</label>
+                        <input type="text" id="firstname" name="firstname" required minlength="3" placeholder="Enter your firstname"/><br>
+
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" name="lastname" required minlength="3" placeholder="Enter your lastname"/><br>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="example@domain.com"/><br>
+                        
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" min="18" max="100" required /><br>
+
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select><br>
+
+                        <label for="country">Country:</label>
+                        <select id="country" name="country" required>
+                            <option value="">--Select Country--</option>
+                            <option value="usa">Usa</option>
+                            <option value="canada">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="nigeria">Nigeria</option>
+                        </select><br>
+
+                        <fieldset>
+                            <legend>Account Setup</legend>
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" required pattern="^[a-zA-Z0-9]{5,}$" placeholder="5+ characters" /><br>
+
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required minlength="6" /><br>
+
+                            <label for="confirm-password">Confirm Password:</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required minlength="6" /><br>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Preferences</legend>
+                            <label for="course">Select Course:</label>
+                            <select id="course" name="course" required>
+                               <option value="">--Select a course--</option>
+                               <option value="html">HTML5</option>
+                               <option value="css">CSS3</option>
+                               <option value="js">JavaScript</option>
+                            </select>
+                        </fieldset>
+                        
+                        <label>
+                            <input type="checkbox" name="agree" required />
+                            I agree to the terms and conditions
+                        </label><br>
+
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                </form>
+               </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 PLP Web Technologies | Created for Advanced HTML5 Assignment</p>
+        </footer>
+        
+    </body>
+</html>
